@@ -6,15 +6,16 @@
   font-weight: bold;
   background-color: #ddd;
   text-align: center;
-  box-shadow: 0 3px grey;
+  box-shadow: 0 1px grey;
   color: black;
+  border: 1px solid grey;
 }
 
 .button--big {
   width: 100px;
   height: 30px;
   line-height: 30px;
-  font-size: 2em;
+  font-size: 1.25em;
 
 }
 
@@ -63,8 +64,8 @@
 
 .article--mod__button {
   position: absolute;
-  right: -50px;
-  top: 70px;
+  right: 20px;
+  bottom: 20px;
 }
 
 .article__button {
