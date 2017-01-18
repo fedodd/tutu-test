@@ -1,0 +1,38 @@
+
+.rating-block {
+width: max-content;
+}
+
+.form {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.star-label {
+  width: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.star {
+ display: none;
+}
+
+.star:checked + .star-label,
+.star:checked ~.star + .star-label {
+  color: #f5b301;
+  transition: 0.2s;
+}
+
+.star-label:hover,
+.star-label:hover ~ .star-label {
+  color: green;
+  transition: 0.2s;
+}
+
+.star--voited + .star-label {
+  color: pink;
+}

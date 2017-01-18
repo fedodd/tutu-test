@@ -1,0 +1,30 @@
+.progress-main {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 14px;
+  position: relative;
+}
+
+.progress-main::-webkit-progress-bar {
+  border-radius: 0.8em;
+  background-color: #eee;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset;
+}
+
+.progress-main::-webkit-progress-value {
+  background: linear-gradient(#95f24e, #64c01c, #95f24e);
+  border-radius: 0.8em;
+}
+
+.progress-main::after {
+  content: attr(value)'%';
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  display: block;
+  top: 1px;
+}
+
