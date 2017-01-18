@@ -21,18 +21,15 @@ width: max-content;
  display: none;
 }
 
-.star:checked + .star-label,
-.star:checked ~.star + .star-label {
-  color: #f5b301;
-  transition: 0.2s;
-}
-
 .star-label:hover,
 .star-label:hover ~ .star-label {
   color: green;
   transition: 0.2s;
 }
 
-.star--voited + .star-label {
-  color: pink;
+.star:checked + .star-label,
+.star:checked ~.star + .star-label {
+  color: #f5b301;
+  transition: 0.2s;
 }
+
