@@ -1,0 +1,52 @@
+.inpute-title--choose {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  cursor: pointer;
+}
+
+.form__choose__title {
+  display: block;
+  font-weight: bold;
+}
+
+ .input__sex,
+ .input__change-surname {
+  display: none;
+}
+
+
+.form__option--choose {
+  width: 40px;
+  height: 20px;
+}
+
+.inpute-title--choose {
+  display: inline-block;
+  background-color: white;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  vertical-align: bottom;
+  width: 100%;
+  font-weight: normal;
+}
+
+.choose__underline {
+  border-bottom: 1px dotted;
+}
+
+.input__change-surname:checked + .inpute-title--choose,
+.input__sex:checked + .inpute-title--choose {
+  background: #8CB903;
+  color: white;
+  border-radius: 0.5em;
+}
+.input__change-surname:checked + .inpute-title--choose .choose__underline,
+.input__sex:checked + .inpute-title--choose .choose__underline {
+  border-bottom: none;
+}
+
+.form__choose {
+  width: 250px;
+}

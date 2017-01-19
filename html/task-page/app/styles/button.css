@@ -1,0 +1,40 @@
+.button {
+  border-radius: 2em;
+  font-size: 14px;
+  background-color: #ddd;
+  text-align: center;
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.1) inset;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.button:hover {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button--prev:hover {
+  background-color: #4f4f4f;
+}
+
+.button--next:hover {
+  background-color: green;
+}
+
+.button:active {
+  background-color: #aaa;
+  box-shadow: none;
+}
+
+.button--prev {
+  background-color: #a9a9a9;
+}
+
+.button--next {
+  background-color: #9cce05;
+}

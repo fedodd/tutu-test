@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>button</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="holder">
+    <aside class="tutu-info">
+      <p>&#9728; TutuRu - крупнейший сервис поиска, бронирования и покупки авбилетов и ж/д билетов</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis blandit diam, ac consequat orci scelerisque ac. Vestibulum molestie, tellus nec pellentesque placerat, neque dui fermentum mauris, a convallis neque ipsum a augue. Donec id convallis tortor. In scelerisque neque at felis malesuada, sed commodo nisi lacinia. Aliquam mollis lacinia urna, in bibendum ligula scelerisque vitae. Suspendisse fringilla laoreet diam, eu pulvinar odio. Nulla dignissim ligula sed elit volutpat, quis blandit libero mollis.</p>
+    </aside>
+    <div class="main">
+      <nav class="nav-block">
+        <ul class="nav">
+          <li class="nav__item nav__item--purple">Личный кабинет</li>
+          <li class="nav__item nav__item--green">Раздел 1</li>
+          <li class="nav__item nav__item--blue">Раздел 2</li>
+          <li class="nav__item nav__item--orange">Раздел 3</li>
+          <li class="nav__item nav__item--grey">Раздел 4</li>
+          <li class="nav__item nav__item--red">Раздел 5</li>
+        </ul>
+      </nav>
+      <section class="section">
+        <div class="section__title-block">
+          <h2 class="section__title">Заполните форму</h2>
+          <div class="section__progress">
+            <div class="progress__step progress__step--finished">
+              <p class="progress__number">1</p>
+            </div>
+            <div class="progress__step progress__step--finished">
+              <p class="progress__number">2</p>
+            </div>
+            <div class="progress__step progress__step--active">
+              <p class="progress__number">3</p>
+            </div>
+            <div class="progress__step">
+              <p class="progress__number">4</p>
+            </div>
+            <div class="progress__step">
+              <p class="progress__number">5</p>
+            </div>
+          </div>
+        </div>
+        <div class="section__form-block">
+          <div class="form-block__title-block">
+            <h3 class="form-block__title">Общая информация</h3>
+            <hr class="form-block__line">
+          </div>
+          <form class="form-block__form">
+            <label class="form__option">
+              <input type="text" class="option__input input--surname">
+              <span class="input-title">Фамилия</span>
+            </label>
+            <label class="form__option">
+              <input type="text" class="input__name">
+              <span class="input-title">Имя</span>
+            </label>
+            <label class="form__option">
+              <input type="text" class="input__middle-name">
+              <span class="input-title">Отчество</span>
+            </label>
+            <div class="form__choose">
+              <span class="form__choose__title">Меняли фамилию?</span>
+              <label class="form__option form__option--choose">
+                <input type="radio" class="input__change-surname" name="change-surname" checked="checked">
+                <span class="input-title inpute-title--choose">
+                  <span class="choose__underline">Нет<span>
+                </span>
+              </label>
+              <label class="form__option form__option--choose">
+                <input type="radio" class="input__change-surname" name="change-surname">
+                <span class="input-title inpute-title--choose">
+                  <span class="choose__underline">Да<span>
+                </span>
+              </label>
+            </div>
+            <div class="form__choose">
+              <span class="form__choose__title">Пол</span>
+              <label class="form__option form__option--choose">
+                <input type="radio" class="input__sex" name="sex" checked="checked">
+                <span class="input-title inpute-title--choose"><span class="choose__underline">Муж<span></span>
+              </label>
+              <label class="form__option form__option--choose">
+                <input type="radio" class="input__sex" name="sex" >
+                <span class="input-title inpute-title--choose"><span class="choose__underline">Жен<span></span>
+              </label>
+            </div>
+            <label class="form__option">
+              <span class="input-title">Семейное положение</span>
+              <select class="input__marital" value="married">
+                <option value="married">Женат / Замужем</option>
+                <option value="not_married">Холост</option>
+              </select>
+            </label>
+            <label class="form__option">
+              <span class="input-title">Гражданство</span>
+              <select class="input__nationality" value="Российская Федерация">
+                <option value="Российская Федерация">Российская Федерация</option>
+                <option value="">USA</option>
+                <option value="">UK</option>
+              </select>
+            </label>
+            <label class="form__option">
+              <span class="input-title">Дата рождения</span>
+              <div class="birthday-choose">
+                <select class="input__birthday" value="1">
+                  <option value="1">1</option>
+                  <option value="11">11</option>
+                  <option value="22">22</option>
+                </select>
+                <select class="input__birthmonth" value="Январь">
+                  <option value="Январь">Январь</option>
+                  <option value="Февраль">Февраль</option>
+                  <option value="Март">Март</option>
+                </select>
+                <select class="input__birthyear" value="1990">
+                  <option value="1990">1990</option>
+                  <option value="1989">1989</option>
+                  <option value="1988">1988</option>
+                </select>
+              </div>
+            </label>
+            <label class="form__option form__option--place-of-birth">
+              <input type="text" class="input__place-of-birth">
+              <span class="input-title">Место рождения</span>
+              <span class="input-example">Например, Россия, Комсомольск-на-Амуре</span>
+            </label>
+          </form>
+        </div>
+      </section>
+      <div class="footer">
+        <a href="#" class="button button--prev">&#8592; Назад</a>
+        <a href="#" class="button button--next">Далее &#8594;</a>
+      </div>
+    </div>
+  </div>
+</body>

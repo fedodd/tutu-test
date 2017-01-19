@@ -1,0 +1,27 @@
+
+.body {
+  font-family: sans-serif;
+  width: 1024px;
+}
+
+.holder {
+  width: 1024px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
