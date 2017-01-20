@@ -1,4 +1,4 @@
-.button {
+.footer__button {
   border-radius: 2em;
   font-size: 14px;
   background-color: #ddd;
@@ -13,28 +13,28 @@
   line-height: 30px;
 }
 
-.button:hover {
+.footer__button:hover {
   cursor: pointer;
   transition: 0.3s;
 }
 
-.button--prev:hover {
+.footer__button--prev:hover {
   background-color: #4f4f4f;
 }
 
-.button--next:hover {
+.footer__button--next:hover {
   background-color: green;
 }
 
-.button:active {
+.footer__button:active {
   background-color: #aaa;
   box-shadow: none;
 }
 
-.button--prev {
+.footer__button--prev {
   background-color: #a9a9a9;
 }
 
-.button--next {
+.footer__button--next {
   background-color: #9cce05;
 }
