@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>button</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/button.css">
+</head>
+<body>
+ <!--Кнопка в <div> -->
+  <header class="header">
+    <div class="logo"></div>
+    <div class="button button--normal button--logo" onclick="location.href='##';">
+      <p class="button__title">Кнопка</p>
+    </div>
+  </header>
+  <section class="content">
+    <article class="article">
+      <p class="article__text">Большая кнопка</p>
+      <div class="button button--big article__button" onclick="location.href='###';">
+        <p class="button__title">Кнопка</p>
+      </div>
+    </article>
+    <article class="article article--mod">
+      <p class="article__text">Маленькая кнопка</p>
+      <div class="button button--small article--mod__button" onclick="location.href='####';">
+        <p class="button__title">Кнопка</p>
+      </div>
+    </article>
+  </section>
+  <footer class="footer">
+  <p>Кнопки с помощью тэгов a и input </p>
+    <!--Кнопка в <a>-->
+    <a href="#" class="button button--anchor button--normal button__footer">Кнопка</a>
+    <!--Кнопка в <input>-->
+    <input type="button" value="Кнопка" class="button button--input button--big button__footer">
+  </footer>
+
+</body>
+
