@@ -1,4 +1,3 @@
-
 .rating-block {
 width: max-content;
 }
@@ -6,6 +5,10 @@ width: max-content;
 .form {
   unicode-bidi: bidi-override;
   direction: rtl;
+}
+
+.star {
+ display: none;
 }
 
 .star-label {
@@ -17,19 +20,17 @@ width: max-content;
   color: #ccc;
 }
 
-.star {
- display: none;
-}
-
 .star-label:hover,
 .star-label:hover ~ .star-label {
-  color: green;
+  color: #f5b301;
   transition: 0.2s;
+  opacity: 0.5;
 }
 
 .star:checked + .star-label,
 .star:checked ~.star + .star-label {
   color: #f5b301;
   transition: 0.2s;
+  opacity: 1;
 }
 

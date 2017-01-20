@@ -48,7 +48,7 @@
             <h3 class="form-block__title">Общая информация</h3>
             <hr class="form-block__line">
           </div>
-          <form class="form-block__form">
+          <form class="form-block__form" name="form" >
             <label class="form__option">
               <input type="text" class="option__input input--surname">
               <span class="input-title">Фамилия</span>
@@ -131,8 +131,11 @@
         </div>
       </section>
       <div class="footer">
-        <a href="#" class="footer__button footer__button--prev">&#8592; Назад</a>
-        <a href="#" class="footer__button footer__button--next">Далее &#8594;</a>
+        <a href="#PREV" class="footer__button footer__button--prev">&#8592; Назад</a>
+        <label class="form-submite">
+          <input type="submite" form="form" class="input-submite" formaction="#send_data">
+          <span class="footer__button footer__button--next">Далее &#8594;</span>
+        </label>
       </div>
     </div>
   </div>

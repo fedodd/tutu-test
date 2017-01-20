@@ -17,14 +17,14 @@
 }
 
 .progress-main::after {
+  display: block;
+  position: absolute;
   content: attr(value)'%';
   font-size: 12px;
   font-family: sans-serif;
   font-weight: bold;
-  position: absolute;
   right: 50%;
   transform: translateX(50%);
-  display: block;
   top: 1px;
 }
 
