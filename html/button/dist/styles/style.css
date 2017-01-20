@@ -27,7 +27,6 @@ body {
   display: flex;
 }
 
-
 .article {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -41,7 +40,6 @@ body {
 .article__text {
   text-align: center;
 }
-
 
 .footer {
   height: 100px;

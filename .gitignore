@@ -1,8 +1,5 @@
-# gulpfiles
-html/button/app
+# My ignore list
 node_modules
-.package.json
-gulpfile.js
 normalize.css
 
 
