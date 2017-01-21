@@ -4,9 +4,8 @@ var gulp = require('gulp'), // Подключаем Gulp
     postcss = require('gulp-postcss'),//подключаем postcss
     concat = require('gulp-concat'),//подключаем сборщик
     sourcemaps = require('gulp-sourcemaps'),
-
+    cssnano = require('gulp-cssnano');
     autoprefixer = require('autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
-    //cssnano = require('gulp-cssnano');
 
 
 //подключаем postcss
@@ -18,8 +17,9 @@ gulp.task('css', function () {
   return gulp.src('./html/task-page/app/styles/**/*.css')
     .pipe(postcss(processors))
     .pipe(sourcemaps.init()) // запоминаем в каком файле что находится
-    .pipe(concat('style.css'))
-    .pipe( sourcemaps.write('.') )
+    .pipe(concat('style.css')) //сливаем в один
+   // .pipe(cssnano('style.css')) //нанонизируем файл)
+    .pipe( sourcemaps.write('.') ) //ставим метки
     .pipe(gulp.dest('./html/task-page/dist/styles'));
 });
 
@@ -35,29 +35,35 @@ gulp.task('browser-sync', function() {
 
 //перекинуть html в dist
 gulp.task('html', function() {
-  return gulp.src('./html/task-page/app/**/*.html')
+  return gulp.src('./html/task-page/app/*.html')
+    .pipe(gulp.dest('./html/task-page/dist'));
+})
+
+gulp.task('js', function() {
+  return gulp.src('./html/task-page/app/*.js')
     .pipe(gulp.dest('./html/task-page/dist'));
 })
 
 // для контроля за изменениями в указанных файлах, и в случае изменений - запускает task
 gulp.task('watch', ['browser-sync'], function() {
   gulp.task('html:watch', ['html'], browserSync.reload);
-  gulp.watch(['./html/task-page/app/**/*.html'], ['html:watch']);
-
+  gulp.watch(['./html/task-page/app/*.html'], ['html:watch']);
   gulp.task('css:watch', ['css'], browserSync.reload);
   gulp.watch(['./html/task-page/app/styles/**/*.css'], ['css:watch']);
+  gulp.task('js:watch', ['js'], browserSync.reload);
+  gulp.watch(['./html/task-page/app/*.js'], ['js:watch']);
   //воткнуть наблюдение за другими файлами css
 });
 
 // Очищаем папку dist перед сборкой
 gulp.task('clean', function() {
-  return del.sync('dist')
+  return del.sync('./html/task-page/dist')
     cache.clearAll();
 })
 
 
 //сборка
-gulp.task('build', [ 'clean', 'html', 'css']);
+gulp.task('build', [ 'html', 'js', 'css']);
 
 // Для автозапуска при команде gulp
 gulp.task('default', ['build' , 'watch']);

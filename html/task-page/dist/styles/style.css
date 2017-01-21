@@ -4,17 +4,26 @@
   font-size: 12px;
   width: 200px;
   margin-right: 40px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
+  margin-top: 60px;
   box-sizing: border-box;
   padding-left: 20px;
 }
 
-.footer__button {
+.form__button {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 50px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.button--input {
   border-radius: 2em;
   font-size: 14px;
   background-color: #ddd;
@@ -29,29 +38,45 @@
   line-height: 30px;
 }
 
-.footer__button:hover {
+.input-submit {
+  display: none;
+}
+
+.button--input {
+  border: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  outline: none;
+}
+
+.button--input:hover {
   cursor: pointer;
   transition: 0.3s;
 }
 
-.footer__button--prev:hover {
+.button--input--prev:hover {
   background-color: #4f4f4f;
 }
 
-.footer__button--next:hover {
+.button--input--next:hover {
   background-color: green;
 }
 
-.footer__button:active {
-  background-color: #aaa;
+.button--input--prev:active {
+  background-color: #333333;
   box-shadow: none;
 }
 
-.footer__button--prev {
+.button--input--next:active {
+  background-color: darkgreen;
+  box-shadow: none;
+}
+
+.button--input--prev {
   background-color: #a9a9a9;
 }
 
-.footer__button--next {
+.button--input--next {
   background-color: #9cce05;
 }
 
@@ -80,6 +105,7 @@
 .nav__item {
   list-style-type: none;
   margin:  0 10px;
+  cursor: pointer;
 }
 
 .nav__item--purple {
@@ -532,8 +558,6 @@ textarea {
   font: inherit; /* 2 */
 }
 
-
-
 .form-block__title-block {
   display: -ms-flexbox;
   display: flex;
@@ -587,16 +611,24 @@ textarea {
   font-weight: bold;
 }
 
-.form__option--place-of-birth,
-.input__place-of-birth {
+.form__option--place-of-birth {
   width: 100%;
 }
 
 .input-example {
   position: absolute;
   top: 50px;
+  left: 0;
   color: #7a7a7a;
   font-size: 12px;
+}
+
+.input--text {
+  box-sizing: border-box;
+}
+
+.form__option--padding {
+  margin-top: 10px;
 }
 
 .inpute-title--choose {
@@ -606,16 +638,19 @@ textarea {
   cursor: pointer;
 }
 
+.form__choose {
+  position: relative;
+}
+
 .form__choose__title {
   display: block;
-  font-weight: bold;
+  position: static;
 }
 
  .input__sex,
  .input__change-surname {
   display: none;
 }
-
 
 .form__option--choose {
   width: 40px;
@@ -681,11 +716,10 @@ textarea {
       flex-grow: 1;
   background-color: #F6F6F6;
   height: 10px;
-  margin: 0 1px;
+  margin-right: 1px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1) inset;
   color: #7b7b7b;
 }
-
 
 .progress__step--finished {
   background-color: #3BAD19;
@@ -736,20 +770,100 @@ textarea {
 .main {
   -ms-flex-positive: 1;
       flex-grow: 1;
+  -ms-overflow: hidden;
+  overflow: hidden;
 }
 
-.footer {
-  background-color: #f2f2f2;
-  box-sizing: border-box;
-  padding: 0 20px;
-  height: 50px;
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
+@media screen and (min-width: 768px) {
+  .form__option--long {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    box-sizing: border-box;
+    padding-right: 10px;
+  }
+
+  .input--text--long {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .holder {
+    width: 680px;
+  }
+
+  .tutu-info {
+    display:none ;
+  }
+
+  .form__option,
+  .form__choose {
+    width: 220px;
+  }
+
+  .form__option--choose {
+    width: 40px;
+  }
+
+  .form__option--place-of-birth {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .holder {
+    width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .nav-block {
+    height: auto;
+  }
+
+  .nav {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin: 5px auto;
+  }
+
+  .nav__item {
+    margin-bottom: 5px;
+  }
+
+  .progress__step {
+    height: 20px;
+  }
+
+  .progress__number {
+    line-height: 20px;
+  }
+
+  .form-block__form {
+    margin-top: 10px;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+
+  .form__option {
+    height: 45px;
+  }
+
+  .form__choose {
+    height: 55px;
+  }
+
+  .form__option--place-of-birth {
+    height: 65px;
+    width: 90%;
+  }
+  .input__place-of-birth {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

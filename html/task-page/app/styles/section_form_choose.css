@@ -5,16 +5,19 @@
   cursor: pointer;
 }
 
+.form__choose {
+  position: relative;
+}
+
 .form__choose__title {
   display: block;
-  font-weight: bold;
+  position: static;
 }
 
  .input__sex,
  .input__change-surname {
   display: none;
 }
-
 
 .form__option--choose {
   width: 40px;

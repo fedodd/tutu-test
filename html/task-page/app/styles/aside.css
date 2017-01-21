@@ -3,9 +3,7 @@
   font-size: 12px;
   width: 200px;
   margin-right: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-top: 60px;
   box-sizing: border-box;
   padding-left: 20px;
 }

@@ -1,36 +1,16 @@
 .button {
-  display: -ms-flexbox;
   display: flex;
-  border-radius: 0.8em;
   font-size: 12px;
   font-weight: bold;
   background-color: #ddd;
   text-align: center;
-  box-shadow: 0 1px grey;
+  box-shadow: 0 2px 2px grey;
   color: black;
   border: 1px solid grey;
-}
-
-.button--big {
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
-  font-size: 1.25em;
-
-}
-
-.button--normal {
+  border-radius: 0.8em;
   width: 80px;
   height: 20px;
   line-height: 20px;
-}
-
-.button--small {
-  width: 60px;
-  height: 15px;
-  line-height: 15px;
-  font-size: 0.75em;
-
 }
 
 .button__title {
@@ -40,14 +20,27 @@
 .button:hover {
   cursor: pointer;
   background-color: #bbb;
-  transition: 0.3s;
+  transition: 0.2s;
+}
+
+.button--big {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.25em;
+}
+
+.button--small {
+  width: 60px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 0.75em;
 }
 
 .button:active {
-  background-color: #aaa;
+  background-color: #999;
   box-shadow: none;
 }
-
 
 .button--anchor {
   display: inline-block;
@@ -57,21 +50,5 @@
 
 .button--input {
   border: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   outline: none;
-}
-
-.article--mod__button {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-}
-
-.article__button {
-  margin: auto;
-}
-
-.button__footer {
-  margin-bottom: 5px;
 }
