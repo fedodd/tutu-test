@@ -1,4 +1,15 @@
-.footer__button {
+.form__button {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button--input {
   border-radius: 2em;
   font-size: 14px;
   background-color: #ddd;
@@ -13,28 +24,44 @@
   line-height: 30px;
 }
 
-.footer__button:hover {
+.input-submit {
+  display: none;
+}
+
+.button--input {
+  border: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  outline: none;
+}
+
+.button--input:hover {
   cursor: pointer;
   transition: 0.3s;
 }
 
-.footer__button--prev:hover {
+.button--input--prev:hover {
   background-color: #4f4f4f;
 }
 
-.footer__button--next:hover {
+.button--input--next:hover {
   background-color: green;
 }
 
-.footer__button:active {
-  background-color: #aaa;
+.button--input--prev:active {
+  background-color: #333333;
   box-shadow: none;
 }
 
-.footer__button--prev {
+.button--input--next:active {
+  background-color: darkgreen;
+  box-shadow: none;
+}
+
+.button--input--prev {
   background-color: #a9a9a9;
 }
 
-.footer__button--next {
+.button--input--next {
   background-color: #9cce05;
 }

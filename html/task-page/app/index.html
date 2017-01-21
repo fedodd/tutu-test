@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>button</title>
+  <title>task-page</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -48,95 +48,96 @@
             <h3 class="form-block__title">Общая информация</h3>
             <hr class="form-block__line">
           </div>
-          <form class="form-block__form" name="form" >
+          <form class="form-block__form" name="form" action="index.html">
             <label class="form__option">
-              <input type="text" class="option__input input--surname">
+              <input type="text" class="input--text input--surname" name="surname">
               <span class="input-title">Фамилия</span>
             </label>
             <label class="form__option">
-              <input type="text" class="input__name">
+              <input type="text" class="input--text input__name" name="name">
               <span class="input-title">Имя</span>
             </label>
-            <label class="form__option">
-              <input type="text" class="input__middle-name">
+            <label class="form__option form__option--long">
+              <input type="text" class="input--text input__middle-name input--text--long" name="middle-name">
               <span class="input-title">Отчество</span>
             </label>
             <div class="form__choose">
-              <span class="form__choose__title">Меняли фамилию?</span>
+              <span class="input-title form__choose__title">Меняли фамилию?</span>
               <label class="form__option form__option--choose">
-                <input type="radio" class="input__change-surname" name="change-surname" checked="checked">
-                <span class="input-title inpute-title--choose">
+                <input type="radio" class="input__change-surname" name="change-surname" checked="checked" value="no">
+                <span class="inpute-title--choose">
                   <span class="choose__underline">Нет<span>
                 </span>
               </label>
               <label class="form__option form__option--choose">
-                <input type="radio" class="input__change-surname" name="change-surname">
-                <span class="input-title inpute-title--choose">
+                <input type="radio" class="input__change-surname" name="change-surname" value="yes">
+                <span class="inpute-title--choose">
                   <span class="choose__underline">Да<span>
                 </span>
               </label>
             </div>
             <div class="form__choose">
-              <span class="form__choose__title">Пол</span>
+              <span class="input-title form__choose__title">Пол</span>
               <label class="form__option form__option--choose">
-                <input type="radio" class="input__sex" name="sex" checked="checked">
-                <span class="input-title inpute-title--choose"><span class="choose__underline">Муж<span></span>
+                <input type="radio" class="input__sex" name="sex" checked="checked" value="man">
+                <span class="inpute-title--choose"><span class="choose__underline">Муж<span></span>
               </label>
               <label class="form__option form__option--choose">
-                <input type="radio" class="input__sex" name="sex" >
-                <span class="input-title inpute-title--choose"><span class="choose__underline">Жен<span></span>
+                <input type="radio" class="input__sex" name="sex" value="woman">
+                <span class="inpute-title--choose"><span class="choose__underline">Жен<span></span>
               </label>
             </div>
-            <label class="form__option">
+            <label class="form__option form__option--long form__option--padding">
               <span class="input-title">Семейное положение</span>
-              <select class="input__marital" value="married">
+              <select class="input__marital input--text--long" value="married" name="marital">
                 <option value="married">Женат / Замужем</option>
                 <option value="not_married">Холост</option>
               </select>
             </label>
             <label class="form__option">
               <span class="input-title">Гражданство</span>
-              <select class="input__nationality" value="Российская Федерация">
+              <select class="input__nationality input--text" value="Российская Федерация" name="nationality">
                 <option value="Российская Федерация">Российская Федерация</option>
-                <option value="">USA</option>
-                <option value="">UK</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
               </select>
             </label>
             <label class="form__option">
               <span class="input-title">Дата рождения</span>
               <div class="birthday-choose">
-                <select class="input__birthday" value="1">
+                <select class="input__birthday" value="1" name="birhday">
                   <option value="1">1</option>
                   <option value="11">11</option>
                   <option value="22">22</option>
                 </select>
-                <select class="input__birthmonth" value="Январь">
+                <select class="input__birthmonth" value="Январь" name="birthmonth">
                   <option value="Январь">Январь</option>
                   <option value="Февраль">Февраль</option>
                   <option value="Март">Март</option>
                 </select>
-                <select class="input__birthyear" value="1990">
+                <select class="input__birthyear" value="1990" name="birthyear">
                   <option value="1990">1990</option>
                   <option value="1989">1989</option>
                   <option value="1988">1988</option>
                 </select>
               </div>
             </label>
-            <label class="form__option form__option--place-of-birth">
-              <input type="text" class="input__place-of-birth">
+            <label class="form__option form__option--place-of-birth form__option--long">
+              <input type="text" class="input__place-of-birth input--text--long input--text" name="place-of-birth">
               <span class="input-title">Место рождения</span>
               <span class="input-example">Например, Россия, Комсомольск-на-Амуре</span>
             </label>
+            <div class="form__button">
+              <label>
+                <input type="button" class="button--input button--input--prev" value="&#8592; Назад">
+              </label>
+              <label class="form-submit">
+                <input type="submit" class="button--input button--input--next" value="Далее &#8594;">
+              </label>
+            </div>
           </form>
         </div>
       </section>
-      <div class="footer">
-        <a href="#PREV" class="footer__button footer__button--prev">&#8592; Назад</a>
-        <label class="form-submite">
-          <input type="submite" form="form" class="input-submite" formaction="#send_data">
-          <span class="footer__button footer__button--next">Далее &#8594;</span>
-        </label>
-      </div>
     </div>
   </div>
 </body>
