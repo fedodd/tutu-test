@@ -1,10 +1,10 @@
 body {
-  width: 600px;
-  margin: auto;
+  width: 800px;
+  margin: 20px auto;
 }
 
 .header {
-  background: #7af2ba;
+  background: dodgerblue;
   border-bottom: 3px solid #3eadb2;
   height: 100px;
   padding: 20px 0;
@@ -13,11 +13,12 @@ body {
 .logo {
   width: 120px;
   height: 60px;
-  background-color: black;
+  background-color: deepskyblue;
   margin: 0 auto;
+  border-radius: 0.8em;
 }
 
-.button--logo {
+.logo__button {
   margin: 10px auto;
 }
 
@@ -25,7 +26,6 @@ body {
   margin-top: 20px;
   display: flex;
 }
-
 
 .article {
   justify-content: space-around;
@@ -40,6 +40,15 @@ body {
   text-align: center;
 }
 
+.article--mod__button {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.article__button {
+  margin: auto;
+}
 
 .footer {
   height: 100px;
@@ -49,4 +58,9 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap ;
+}
+
+.footer__button {
+  margin-bottom: 5px;
+  justify-content: space-around;
 }

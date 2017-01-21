@@ -3,28 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>button</title>
-  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/button.css">
 </head>
 <body>
  <!--Кнопка в <div> -->
   <header class="header">
     <div class="logo"></div>
-    <div class="button button--normal button--logo" onclick="location.href='##';">
+    <div class="button logo__button button--big">
       <p class="button__title">Кнопка</p>
     </div>
   </header>
   <section class="content">
     <article class="article">
       <p class="article__text">Большая кнопка</p>
-      <div class="button button--big article__button" onclick="location.href='###';">
+      <div class="button article__button button--big";">
         <p class="button__title">Кнопка</p>
       </div>
     </article>
     <article class="article article--mod">
       <p class="article__text">Маленькая кнопка</p>
-      <div class="button button--small article--mod__button" onclick="location.href='####';">
+      <div class="button article--mod__button button--small">
         <p class="button__title">Кнопка</p>
       </div>
     </article>
@@ -32,10 +30,9 @@
   <footer class="footer">
   <p>Кнопки с помощью тэгов a и input </p>
     <!--Кнопка в <a>-->
-    <a href="#" class="button button--anchor button--normal button__footer">Кнопка</a>
+    <a href="#" class="button button--anchor footer__button">Кнопка</a>
     <!--Кнопка в <input>-->
-    <input type="button" value="Кнопка" class="button button--input button--big button__footer">
+    <input type="button" value="Кнопка" class="button button--input footer__button button--big">
   </footer>
-
 </body>
 
