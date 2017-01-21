@@ -1,5 +1,8 @@
 .rating-block {
-width: max-content;
+  width: 91px;   /*  для IE11 */
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .form {
@@ -8,7 +11,7 @@ width: max-content;
 }
 
 .star {
- display: none;
+  display: none;
 }
 
 .star-label {
@@ -24,7 +27,7 @@ width: max-content;
 .star-label:hover ~ .star-label {
   color: #f5b301;
   transition: 0.2s;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .star:checked + .star-label,
@@ -34,3 +37,5 @@ width: max-content;
   opacity: 1;
 }
 
+
+/*# sourceMappingURL=style.css.map */

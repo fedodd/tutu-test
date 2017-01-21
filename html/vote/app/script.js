@@ -8,7 +8,9 @@ stars = Array.from(stars);
 stars.forEach(function(star, i) {
   // на каждый элемент вешаем обработчик события click
   star.addEventListener('click', function() {
-  // при клике меняем тогглим класс .is__active
+  // при клике меняем тогглим класс .is__active (переключатель содного на другое)
     star.classList.toggle('star--voited');
   });
 });
+
+//Этот код использую впервые, помогал друг.
