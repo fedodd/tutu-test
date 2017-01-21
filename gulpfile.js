@@ -4,9 +4,8 @@ var gulp = require('gulp'), // Подключаем Gulp
     postcss = require('gulp-postcss'),//подключаем postcss
     concat = require('gulp-concat'),//подключаем сборщик
     sourcemaps = require('gulp-sourcemaps'),
-    cssnano = require('gulp-cssnano');
+    cssnano = require('gulp-cssnano'),
     autoprefixer = require('autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
-
 
 //подключаем postcss
 gulp.task('css', function () {
@@ -60,7 +59,6 @@ gulp.task('clean', function() {
   return del.sync('./html/task-page/dist')
     cache.clearAll();
 })
-
 
 //сборка
 gulp.task('build', [ 'html', 'js', 'css']);
