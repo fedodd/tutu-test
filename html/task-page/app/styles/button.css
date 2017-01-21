@@ -1,0 +1,67 @@
+.form__button {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button--input {
+  border-radius: 2em;
+  font-size: 14px;
+  background-color: #ddd;
+  text-align: center;
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.1) inset;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.input-submit {
+  display: none;
+}
+
+.button--input {
+  border: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  outline: none;
+}
+
+.button--input:hover {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button--input--prev:hover {
+  background-color: #4f4f4f;
+}
+
+.button--input--next:hover {
+  background-color: green;
+}
+
+.button--input--prev:active {
+  background-color: #333333;
+  box-shadow: none;
+}
+
+.button--input--next:active {
+  background-color: darkgreen;
+  box-shadow: none;
+}
+
+.button--input--prev {
+  background-color: #a9a9a9;
+}
+
+.button--input--next {
+  background-color: #9cce05;
+}

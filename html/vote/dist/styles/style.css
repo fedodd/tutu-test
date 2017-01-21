@@ -1,0 +1,41 @@
+.rating-block {
+  width: 91px;   /*  для IE11 */
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.form {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.star {
+  display: none;
+}
+
+.star-label {
+  width: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.star-label:hover,
+.star-label:hover ~ .star-label {
+  color: #f5b301;
+  transition: 0.2s;
+  opacity: 0.8;
+}
+
+.star:checked + .star-label,
+.star:checked ~.star + .star-label {
+  color: #f5b301;
+  transition: 0.2s;
+  opacity: 1;
+}
+
+
+/*# sourceMappingURL=style.css.map */

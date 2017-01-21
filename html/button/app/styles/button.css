@@ -1,0 +1,54 @@
+.button {
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #ddd;
+  text-align: center;
+  box-shadow: 0 2px 2px grey;
+  color: black;
+  border: 1px solid grey;
+  border-radius: 0.8em;
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.button__title {
+  margin: auto;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #bbb;
+  transition: 0.2s;
+}
+
+.button--big {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.25em;
+}
+
+.button--small {
+  width: 60px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 0.75em;
+}
+
+.button:active {
+  background-color: #999;
+  box-shadow: none;
+}
+
+.button--anchor {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.button--input {
+  border: none;
+  outline: none;
+}

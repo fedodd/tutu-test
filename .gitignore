@@ -1,3 +1,10 @@
+# My ignore list
+node_modules
+normalize.css
+
+
+
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

@@ -1,0 +1,9 @@
+.tutu-info {
+  flex-shrink: 0;
+  font-size: 12px;
+  width: 200px;
+  margin-right: 40px;
+  margin-top: 60px;
+  box-sizing: border-box;
+  padding-left: 20px;
+}

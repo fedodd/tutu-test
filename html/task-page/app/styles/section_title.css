@@ -1,0 +1,59 @@
+.section__title-block {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.section__title {
+  margin: 0;
+  padding: 0 20px 0 0;
+  font-size: 22px;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.section__progress {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.progress__step {
+  flex-grow: 1;
+  background-color: #F6F6F6;
+  height: 10px;
+  margin-right: 1px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1) inset;
+  color: #7b7b7b;
+}
+
+.progress__step--finished {
+  background-color: #3BAD19;
+}
+
+.progress__step--active {
+  background-color: #96C704;
+}
+
+.progress__step--active,
+.progress__step--finished {
+  color: white;
+}
+
+.progress__step:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.progress__step:last-child {
+  border-radius: 0 3px 3px 0;
+}
+
+.progress__number {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  line-height: 10px;
+  font-size: 9px;
+  font-style: italic;
+}
