@@ -1,6 +1,6 @@
-"use strict";
+//функция dscount потраченное время - 1,5-2 часа
 
-//функция dscount
+"use strict";
 
 var element = '1fc2_2FFF2CCC1fcd12fc';
 var s1 = 'F';
@@ -17,9 +17,6 @@ function dscount(element, s1, s2 ) {
   }
   return count;
 }
-
-console.log(dscount(element, s1, s2));
-
 
 // Для удобства можно использовать эти тесты:
 try {
