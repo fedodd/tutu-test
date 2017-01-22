@@ -787,7 +787,7 @@ textarea {
   }
 }
 
-@media (max-width: 1024px) {
+@media tablet and (max-width: 1024px) {
 
   .holder {
     width: 680px;
@@ -811,7 +811,7 @@ textarea {
   }
 }
 
-@media (max-width: 768px) {
+@media handheld and (max-width: 768px) {
   .holder {
     width: 320px;
     margin: 0 auto;
