@@ -787,7 +787,7 @@ textarea {
   }
 }
 
-@media tablet and (max-width: 1024px) {
+@media (max-width: 1024px) {
 
   .holder {
     width: 680px;
