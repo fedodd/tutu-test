@@ -811,7 +811,7 @@ textarea {
   }
 }
 
-@media handheld and (max-width: 768px) {
+@media (max-width: 768px), handheld {
   .holder {
     width: 320px;
     margin: 0 auto;
