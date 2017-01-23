@@ -1,5 +1,5 @@
 //я бы переписал задачу с одним условием, завернув в цикл повторяющиеся операции
-var vote = 0;
+var vote = 77;
 
 function drawRating(vote) {
   var star = Math.ceil(vote / 20);
