@@ -12,7 +12,6 @@ var string ='http://tutu.ru:8080/do/any.php?a=1&b[]=a&b[]=b#foo';
 parseUrl(string);
 
 console.log( parseUrl(string).href )
-console.log( parseUrl(string).href )
 console.log( parseUrl(string).hash  )
 console.log( parseUrl(string).port )
 console.log( parseUrl(string).host  )
